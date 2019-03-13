@@ -16,7 +16,7 @@ import model.auxiliary.Tuple;
 
 /**
  * Mealy Automaton implementation of a Finite State Machine.
- * @author JUAN DAVID CARVAJAL
+ * @author JUAN DAVID CARVAJAL (Basura)
  */
 public class MealyAutomaton extends FiniteStateMachine {
 

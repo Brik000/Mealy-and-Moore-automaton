@@ -27,7 +27,7 @@ public class TAREA_TEORICA_V2 {
      * @throws Exception 
      */
     public static void mealy2() throws Exception {
- String[] Q1 = {"A", "B", "C"};
+    	String[] Q1 = {"A", "B", "C"};
         String[] S1 = {"1", "0"};
         String[] R1 = {"1", "0"};
         String[] Q2 = {"D", "E", "F", "G", "H"};
