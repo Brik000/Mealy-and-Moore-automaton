@@ -41,7 +41,9 @@ public class MooreAutomaton extends FiniteStateMachine {
     }
 
     private static boolean areEquivalent(MooreAutomaton M1, MooreAutomaton M2) throws Exception {
-
+        if(M1==M2){
+            return true;
+        }
         if (M1.inputAlphabet.equals(M2.inputAlphabet) && M1.outputAlphabet.equals(M2.outputAlphabet)) {
             M1.deleteInnacesibleStates();
             M2.deleteInnacesibleStates();

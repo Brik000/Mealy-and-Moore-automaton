@@ -16,7 +16,7 @@ import model.auxiliary.Tuple;
 
 /**
  * Mealy Automaton implementation of a Finite State Machine.
- * @author JUAN DAVID CARVAJAL (Basura)
+ * @author JUAN DAVID CARVAJAL
  */
 public class MealyAutomaton extends FiniteStateMachine {
 
@@ -86,7 +86,9 @@ public class MealyAutomaton extends FiniteStateMachine {
     }
 
     private static boolean areEquivalent(MealyAutomaton M1, MealyAutomaton M2) throws Exception {
-
+        if (M1==M2){
+            return true;
+        }
         if (M1.inputAlphabet.equals(M2.inputAlphabet) && M1.outputAlphabet.equals(M2.outputAlphabet)) {
             M1.deleteInnacesibleStates();
             M2.deleteInnacesibleStates();
