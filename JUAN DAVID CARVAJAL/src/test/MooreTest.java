@@ -27,6 +27,8 @@ class MooreTest {
 		m.addOutput("B", "0");
 		
 		m.addTransition("A", "0", "B");
+		m.addTransition("A", "1", "A");
+		m.addTransition("B", "0", "B");
 		m.addTransition("B", "1", "A");
 		
 	}
@@ -41,6 +43,8 @@ class MooreTest {
 		m1.addOutput("D", "0");
 		
 		m1.addTransition("C", "0", "D");
+		m1.addTransition("C", "1", "C");
+		m1.addTransition("D", "0", "D");
 		m1.addTransition("D", "1", "C");
 		
 	}
@@ -56,9 +60,9 @@ class MooreTest {
 		m2.addOutput("B", "0");
 		
 		m2.addTransition("A", "0", "B");
-		m2.addTransition("A", "0", "A");
+		m2.addTransition("A", "1", "A");
 		m2.addTransition("B", "0", "A");
-		m2.addTransition("B", "0", "B");
+		m2.addTransition("B", "1", "B");
 		
 	}
 	
